@@ -13,10 +13,10 @@ from random import randint
 
 
 print("Your fortune cookie says...")
-number = randint(1,4)
+number = randint(1, 4)
 if number >= 3:
     if number == 3:
-         print("A beautiful soul will enter your life soon")
+        print("A beautiful soul will enter your life soon")
     else:
         print("Sit down and enjoy the world")
 else:
