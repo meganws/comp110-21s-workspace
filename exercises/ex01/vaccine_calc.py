@@ -20,7 +20,10 @@ vaxed_ppl_per_day: float = doses_per_day / 2
 if vaxed_ppl_per_day % 2 > 0:
     vaxed_ppl_per_day = vaxed_ppl_per_day // 1
 
-days_to_goal1: float =  ((vaxed_to_meet_target_percent - vaccinated_ppl) / vaxed_ppl_per_day) // 1
+ppl_to_work_with: float = vaxed_to_meet_target_percent - vaccinated_ppl
+days_to_goal1: float = ppl_to_work_with / vaxed_ppl_per_day
+if days_to_goal1 % 2 > 0:
+    days_to_goal = days_to_goal1 // 1
 
 days_to_goal2: int = (int(days_to_goal1))
 
