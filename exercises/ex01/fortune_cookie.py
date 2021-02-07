@@ -1,6 +1,6 @@
 """Program that outputs one of at least four random, good fortunes."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730388741"
 
 # The randint function is imported from the random library so that
 # you are able to generate integers at random.
@@ -12,4 +12,16 @@ __author__ = "ENTER YOUR 9-DIGIT PID HERE"
 from random import randint
 
 
-# Begin your solution here...
+print("Your fortune cookie says...")
+number = randint(1,4)
+if number >= 3:
+    if number == 3:
+         print("A beautiful soul will enter your life soon")
+    else:
+        print("Sit down and enjoy the world")
+else:
+    if number == 2:
+        print("Don't put off what you can do today, tomorrow")
+    else:
+        print("Do or do not, there is no try")
+print("Now, go spread positive vibes!")
