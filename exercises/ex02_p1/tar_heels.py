@@ -8,18 +8,21 @@ def main() -> None:
     x: int = int(input("Enter an int: "))
     print(tar_heels(x))
 
+
 def tar_heels(x: int) -> str:
+    """Developing the str values"""
     if int(x) % 2 == 0:
         if x % 7 == 0:
-           message: str = str("TAR HEELS")
+            message: str = str("TAR HEELS")
         else:
-           message: str = str("TAR")
+            message: str = str("TAR")
     else:
         if int(x) % 7 == 0:
-           message: str = str("HEELS")
+            message: str = str("HEELS")
         else:
-           message: str = str("CAROLINA")
+            message: str = str("CAROLINA")
     return str(message)
+
 
 if __name__ == "__main__":
     main()
