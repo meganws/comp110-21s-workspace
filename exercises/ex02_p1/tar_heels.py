@@ -10,7 +10,7 @@ def main() -> None:
 
 
 def tar_heels(x: int) -> str:
-    """Developing the str values"""
+    """Developing the str values."""
     if int(x) % 2 == 0:
         if x % 7 == 0:
             message: str = str("TAR HEELS")
