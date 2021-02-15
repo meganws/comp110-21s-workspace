@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 today: datetime = datetime.today()
 
 population: int = int(input("What is the population? "))
-admined: int = int(input("How many dosed have been administered? "))
+admined: int = int(input("How many doses have been administered? "))
 doses_per_day: int = int(input("How many doses are given per day? "))
 target_percent: int = int(input("What is the target percent? "))
 
