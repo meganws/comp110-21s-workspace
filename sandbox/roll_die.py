@@ -1,0 +1,6 @@
+"""Roll some die yo."""
+
+from random import randint
+
+print(randint(1, 6))
+print(randint(1, 6))
